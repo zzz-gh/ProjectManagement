@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".activities.SplashActivity">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_app_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginTop="70dp"-->
+    <!--        android:text="@string/app_name"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:textSize="@dimen/splash_screen_title_text_size"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:textAllCaps="true"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gif_logo"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
